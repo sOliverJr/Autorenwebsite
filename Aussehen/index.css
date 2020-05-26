@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+
+body{
+	background-color: #ecf0f1;
+	/* background-image: url("Bilder/wd.jpeg"); */
+}
+
+.ipad {
+	display: none;
+}
+
+.mobile {
+	display: block;
+}
+
+.bild {
+	display: none;
+}
+
+	
+	/* Headder */
+
+li, a, button{
+	color: #edf0f1;
+	text-decoration: none;
+}
+	
+.bild {
+	width: 180px;
+	
+}
+
+headder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #bdc3c7;
+}
+
+.nav_links {
+	list-style: none;
+	font-size: 2em;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+
+.nav_links li a:hover {
+	color: #0088a9;
+}
+
+button {
+	padding: 18px;
+	background-color: rgba(0, 136, 169, 0.8);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 22px;
+
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+	position: relative;
+}
+
+nav a:hover {
+	color: #0088a9;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #ecf0f1;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition: all ease-in-out 250ms;
+}
+	  
+	  
+
+	 /* Body */
+
+h2#name{
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Roboto Mono', monospace;
+}
+
+p#zitat{
+	text-align: center;
+	font-style: italic;
+	font-size: 1.75em;
+	font-style: large;
+	font-family: 'Dancing Script', cursive;
+}
+
+p#quelle{
+	position: relative;
+	text-indent: 55%;
+	top: -10px;
+	font-size: 1.5em;
+}
+
+#welcome{
+	overflow: hidden;
+	position: relative;
+	background-color: c;
+	color: white;
+	padding: 5px;
+	margin: 7%;
+	line-height: normal;
+	font-family: 'Playfair Display', serif;
+}
+
+#titel{
+	position: relative;
+	margin: 5%;
+	font-size: 2em;
+}
+
+.text{
+	position: relative;
+	top: -3%;
+	margin: 5%;
+	font-size: small;
+}
+
+.ende{
+	position: relative;
+	top: -5%;
+	margin: 5%;
+	font-size: small;
+}
+
+
+#links{
+	background-color: #bdc3c7;
+	position: relative;
+	padding: 1.5%;
+	font-size: 1.5em;
+	color: white;
+	width: 87%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+#b_links{
+	position: relative;
+	width: 87%;
+	margin-left: 6.5%;
+	margin-right: 6.5%;
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+x{
+	margin-left: 5%;
+}
+
+#rechts{
+	background-color: #bdc3c7;
+	position: relative;
+	padding: 1.5%;
+	font-size: 1.5em;
+	color: white;
+	width: 87%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 4%;
+	margin-bottom: 0%;
+}
+
+#b_rechts{
+	position: relative;
+	width: 87%;
+	margin-left: 6.5%;
+	margin-right: 6.5%;
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+y{
+	margin-left: 5%;
+}
+
+	/* Footer */
+
+p#copyright{
+	position: relative;
+	overflow: hidden;
+	/* padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%; */
+	padding: 2%;
+	color: white;
+	text-align: center;
+	bottom: 0%;
+	background-color: #bdc3c7;
+	font-size: 1em;
+}
+
+
+@media only screen and (min-width: 768px){
+	
+		/* Für tablets bzw laptops optimiert */
+
+	.bild {
+		display: block;
+	}
+
+	#placeholder {
+		display: none;
+	}
+
+	headder {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 5%;
+		padding-right: 5%;
+		background-color: #bdc3c7;
+	}
+	
+	.nav_links {
+		list-style: none;
+		font-size: 1em;
+	}
+	
+	.nav_links li {
+		display: inline-block;
+		padding: 0px 20px;
+	}
+	
+	
+	.nav_links li a:hover {
+		color: #0088a9;
+	}
+	
+	button {
+		padding: 9px;
+		background-color: rgba(0, 136, 169, 0.8);
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		font-size: 11px;
+	
+	}
+	
+	button:hover {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	
+	nav li {
+		position: relative;
+	}
+	
+	nav a:hover {
+		color: #0088a9;
+	}
+	
+	nav a::before {
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: #ecf0f1;
+		
+		position: absolute;
+		top: 0;
+		width: 0%;
+		
+		transition: all ease-in-out 250ms;
+	}
+		  
+
+	h2#name{
+		text-align: center;
+		font-size: 5em;
+	}
+	
+	p#zitat{
+		text-align: center;
+		font-style: italic;
+		font-size: 3.5em;
+		font-style: large;
+	}
+	
+	p#quelle{
+		position: relative;
+		text-indent: 60%;
+		top: -10px;
+		font-size: 2em;
+	}
+
+	#welcome{
+		overflow: hidden;
+		position: relative;
+		background-color: #bdc3c7;
+		color: white;
+		padding: 5px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 20%;
+		margin-right: 20%;
+		line-height: normal;
+		font-family: 'Playfair Display', serif;
+	}
+
+	#titel{
+		position: relative;
+		margin: 5%;
+		font-size: 2em;
+	}
+	
+	.text{
+		position: relative;
+		top: -3%;
+		margin: 5%;
+		font-size: 1.5em;
+	}
+	
+	.ende{
+		position: relative;
+		top: -5%;
+		margin: 5%;
+		font-size: 1.5em;
+	}
+
+	.handy {
+		display: none;
+	}
+
+	.ipad {
+		display: block;
+	}
+
+	#links{
+		background-color: #bdc3c7;
+		position: relative;
+		padding: 1.5%;
+		font-size: 2em;
+		color: white;
+		width: 40%;
+		margin-left: 5%;
+		margin-right: 0%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+		float: left;
+	}
+
+	#b_links{
+		position: relative;
+		width: 43%;
+		margin-left: 5%;
+		margin-right: 2%;
+		margin-top: 1%;
+		margin-bottom: 0%;
+		float: left;
+	}
+
+	x{
+		margin-left: 3%;
+	}
+
+	#rechts{
+		background-color: #bdc3c7;
+		position: relative;
+		padding: 1.5%;
+		font-size: 2em;
+		color: white;
+		width: 40%;
+		margin-left: 52%;
+		margin-right: 5%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	#b_rechts{
+		position: relative;
+		width: 43%;
+		margin-left: 2%;
+		margin-right: 5%;
+		margin-top: 1%;
+		margin-bottom: 0%;
+	}
+
+	y{
+		margin-left: 3%;
+	} 
+
+		/* Footer */
+
+	p#copyright{
+		position: relative;
+		overflow: hidden;
+		/* padding-top: 1%;
+		padding-bottom: 1%;
+		padding-left: 1%;
+		padding-right: 1%; */
+		padding: 1%;
+		color: white;
+		text-align: center;
+		bottom: 0%;
+		background-color: #bdc3c7;
+		font-size: 1em;
+	}
+
+	}

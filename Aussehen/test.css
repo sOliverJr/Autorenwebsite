@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); 
+	
+	/* Headder */
+
+li, a, button{
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.bild {
+	width: 180px;
+	
+}
+
+headder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #bdc3c7;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+/* .nav_links li a {
+	transition: all 0.3s ease 0s;
+} */
+
+.nav_links li a:hover {
+	color: #0088a9;
+}
+
+button {
+	padding: 9px;
+	background-color: rgba(0, 136, 169, 0.8);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 11px;
+	/* transition: all 0.3s ease 0s; */
+
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+	position: relative;
+}
+
+nav a:hover {
+	color: #0088a9;
+}
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #ecf0f1;
+  
+	position: absolute;
+	top: 0;
+	width: 0%;
+  
+	transition: all ease-in-out 250ms;
+  }
+  
+  
+	  /* Body */
+	  
+#schreibtisch {
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10px;
+	position: absolute;
+	z-index: -1;
+}
+
+p#zitat{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-style: italic;
+	font-size: 1.75em;
+	font-style: large;
+	font-family: 'Dancing Script', cursive;
+}
+
+p#quelle{
+	position: relative;
+	text-indent: 55%;
+	top: 5%;
+	font-size: 1.5em;
+}
